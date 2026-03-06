@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link icon font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- link CSS Tabby -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css"
+    />
+
+    <!-- Link css  -->
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="./img/logo.svg" class="h-8" alt="Flowbite Logo" />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-black bg-gray-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Sign Up Now
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                  >How It Works</a
+                >
+              </li>
+              <li class="relative group">
+                <button
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                >
+                  Pages
+                  <svg
+                    class="w-2.5 h-2.5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="absolute left-0 top-full w-56 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50"
+                >
+                  <ul class="py-2 text-sm text-gray-700">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Career</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Career Single</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Integrations</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Integration Single</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Changelogs</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-orange-500"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 md:p-0 hover:text-orange-500"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section class="pt-24 min-h-screen flex items-center mt-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-12"
+        >
+          <div class="text-black max-w-xl md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+              Scale design & dev <br />
+              operations with <br />
+              Avocode Enterprise
+            </h1>
+            <p class="text-gray-600 text-base md:text-lg mb-8 mt-8">
+              A fully integrated suite of authentication & authoriz products,
+              Stytch’s platform removes the headache of.
+            </p>
+            <button
+              class="bg-gray-200 text-gray-900 font-medium px-8 py-4 rounded-full hover:bg-gray-300 transition duration-300"
+            >
+              Download The Theme
+            </button>
+          </div>
+          <div class="w-full md:w-1/2 flex justify-center">
+            <img
+              class="w-full max-w-xl object-contain"
+              src="./img/banner-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="pt-24 min-h-screen mt-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <!-- Title -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-start gap-6 md:gap-10"
+        >
+          <div class="left-title w-full md:w-1/2">
+            <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+              The Highlighting Part Of <br />
+              Our Solution
+            </h1>
+          </div>
+
+          <div class="right-title w-full md:w-1/2">
+            <p class="text-gray-500 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              Morbi egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin .
+            </p>
+          </div>
+        </div>
+        <div
+          class="solution-item-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-10"
+        >
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Live Caption</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-1.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Smart Reply</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-2.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Sound Amplifier</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-3.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Gesture Navigation</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-4.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Dark Theme</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-5.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Privacy Controls</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-6.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Location Controls</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-7.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Security Updates</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-8.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Focus Mode</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-9.svg" />
+          </div>
+
+          <div class="solution-item bg-gray-100 p-5 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2">Family Link</h3>
+            <p class="text-gray-500 text-sm">
+              Lorem ipsum dolor sit amet <br />
+              consectetur, adipisicing elit.
+            </p>
+            <img class="mt-6 w-6" src="./img/feature-icon-10.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reputation -->
+    <section class="pt-24 mt-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- LEFT -->
+          <div>
+            <div class="title">
+              <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+                Prevent failure from to <br />
+                impacting your <br />
+                reputation
+              </h1>
+
+              <p class="text-gray-500 leading-relaxed mt-5 mb-8">
+                Our platform helps you build secure onboarding authentication
+                experiences that retain and engage your users. We build the
+                infrastructure, you can.
+              </p>
+            </div>
+
+            <ul data-tabs class="space-y-4">
+              <li>
+                <a
+                  href="#img1"
+                  data-tabby-default
+                  class="flex items-center gap-4 bg-orange-200 px-5 py-4 rounded-lg"
+                >
+                  <img src="./img/drop.svg" />
+                  <span> Habit building essential choose habit</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#img2" class="flex items-center gap-4 px-5 py-4">
+                  <img src="./img/brain.svg" />
+                  <span>Get an overview of Habit Calendars.</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#img3" class="flex items-center gap-4 px-5 py-4">
+                  <img src="./img/timer.svg" />
+                  <span>Start building with Habitify platform</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- RIGHT -->
+          <div data-tabs-content>
+            <div id="img1">
+              <img
+                src="./img/sells-by-country.png"
+                class="w-full rounded-2xl shadow-lg"
+              />
+            </div>
+
+            <div id="img2">
+              <img
+                src="./img/collaboration.png"
+                class="w-full rounded-2xl shadow-lg"
+              />
+            </div>
+
+            <div id="img3">
+              <img
+                src="./img/sells-by-country.png"
+                class="w-full rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accept payments -->
+    <section class="pt-24 min-h-screen flex items-center mt-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-12"
+        >
+          <!-- content img -->
+          <div class="w-full md:w-1/2 flex justify-center">
+            <img src="./img/collaboration.png" alt="" />
+          </div>
+          <!-- content text -->
+          <div class="text-black max-w-xl md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+              Accept payments any <br />
+              country in this whole <br />
+              universe
+            </h1>
+            <p class="text-gray-500 text-base md:text-lg mb-8 mt-8">
+              Donec sollicitudin molestie malesda. Donec <br />
+              sollitudin molestie malesuada. Mauris pellentesque egestas non
+              nisi. Cras ultricies ligula sed
+            </p>
+            <ul class="space-y-4 font-normal">
+              <li class="flex items-center gap-3 text-gray-700 text-lg">
+                <img src="./img/checkmark-circle.svg" alt="" class="w-6 h-6" />
+                <span>Supporting more than 119 country world</span>
+              </li>
+
+              <li class="flex items-center gap-3 text-gray-700 text-lg">
+                <img src="./img/checkmark-circle.svg" alt="" class="w-6 h-6" />
+                <span>Open transaction with more than currencies</span>
+              </li>
+
+              <li class="flex items-center gap-3 text-gray-700 text-lg">
+                <img src="./img/checkmark-circle.svg" alt="" class="w-6 h-6" />
+                <span>Customer Service with 79 languages</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nút bấm để chuyển trang lên  -->
+    <a href="#" class="backtoTop cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- script tabby -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+
+    <script>
+      new Tabby("[data-tabs]");
+    </script>
+
+    <!-- script back to top  -->
+    <script src="./lib/back-to-top/util.js"></script>
+    <script src="./lib/back-to-top/main.js"></script>
+  </body>
+</html>
