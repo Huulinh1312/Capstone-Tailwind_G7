@@ -563,10 +563,10 @@
       }
     }
   }
-  .hover\:bg-blue-800 {
+  .hover\:bg-orange-500 {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-blue-800);
+        background-color: var(--color-orange-500);
       }
     }
   }
@@ -603,9 +603,9 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
-  .focus\:ring-blue-300 {
+  .focus\:ring-orange-500 {
     &:focus {
-      --tw-ring-color: var(--color-blue-300);
+      --tw-ring-color: var(--color-orange-500);
     }
   }
   .focus\:ring-gray-200 {
@@ -942,4 +942,55 @@
       --tw-duration: initial;
     }
   }
+}
+/* global */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("../../img/body-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Reputation */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+[data-tabs] a[aria-selected="true"] {
+    background: #fed7aa;
+}
+
+/* back to top */
+.backtoTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 20%;
+    background-color: orange;
+    opacity: 0.7;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: 1;
+}
+
+.wow img {
+    animation: none;
 }
