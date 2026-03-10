@@ -39,6 +39,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <!-- Link css  -->
     <link rel="stylesheet" href="./css/output.css" />
@@ -222,22 +224,35 @@
           class="flex flex-col md:flex-row justify-between items-center gap-12"
         >
           <div class="text-black max-w-xl md:text-left">
-            <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+            <h1
+              class="text-3xl md:text-4xl font-bold leading-tight"
+              data-aos="fade-up"
+            >
               Scale design & dev <br />
               operations with <br />
               Avocode Enterprise
             </h1>
-            <p class="text-gray-600 text-base md:text-lg mb-8 mt-8">
+            <p
+              class="text-gray-600 text-base md:text-lg mb-8 mt-8"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               A fully integrated suite of authentication & authoriz products,
               Stytch’s platform removes the headache of.
             </p>
             <button
               class="bg-gray-200 text-gray-900 font-medium px-8 py-4 rounded-full hover:bg-orange-500 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               Download The Theme
             </button>
           </div>
-          <div class="w-full md:w-1/2 flex justify-center">
+          <div
+            class="w-full md:w-1/2 flex justify-center"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <img
               class="w-full max-w-xl object-contain"
               src="./img/banner-img.png"
@@ -254,7 +269,10 @@
         <!-- Title -->
         <div
           class="flex flex-col md:flex-row justify-between items-start gap-6 md:gap-10"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
+          >
           <div class="left-title w-full md:w-1/2">
             <h1 class="text-3xl md:text-4xl font-bold leading-tight">
               The Highlighting Part Of <br />
@@ -272,6 +290,8 @@
         </div>
         <div
           class="solution-item-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
         >
           <div class="solution-item bg-gray-100 p-5 rounded-xl">
             <h3 class="text-xl font-semibold mb-2">Live Caption</h3>
@@ -371,7 +391,7 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- LEFT -->
-          <div>
+          <div class="animate__fadeInLeft animate__animated animate__delay-1s">
             <div class="title">
               <h1 class="text-3xl md:text-4xl font-bold leading-tight">
                 Prevent failure from to <br />
@@ -414,7 +434,7 @@
             </ul>
           </div>
           <!-- RIGHT -->
-          <div data-tabs-content>
+          <div class="animate__fadeInRight animate__animated animate__delay-1s">
             <div id="img1">
               <img
                 src="./img/sells-by-country.png"
@@ -447,11 +467,15 @@
           class="flex flex-col md:flex-row justify-between items-center gap-12"
         >
           <!-- content img -->
-          <div class="w-full md:w-1/2 flex justify-center">
+          <div
+            class="w-full md:w-1/2 flex justify-center animate__fadeInLeft animate__animated animate__delay-2s"
+          >
             <img src="./img/collaboration.png" alt="" />
           </div>
           <!-- content text -->
-          <div class="text-black max-w-xl md:text-left">
+          <div
+            class="text-black max-w-xl md:text-left animate__fadeInRight animate__animated animate__delay-2s"
+          >
             <h1 class="text-3xl md:text-4xl font-bold leading-tight">
               Accept payments any <br />
               country in this whole <br />
@@ -491,6 +515,15 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
     <script>
       new Tabby("[data-tabs]");
+    </script>
+
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
     </script>
 
     <!-- script back to top  -->
