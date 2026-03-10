@@ -511,6 +511,9 @@
     <section class="pt-24 flex items-center mt-12">
       <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
         <div class="flex flex-col md:flex-row items-center gap-16">
+          <div
+            class="w-full md:w-4/12 text-black text-left animate__fadeInLeft animate__animated animate__delay-3s"
+          >
           <div class="w-full md:w-4/12 text-black text-left">
             <h2
               class="text-3xl md:text-4xl font-bold leading-tight mb-6 tracking-tight"
@@ -520,6 +523,9 @@
             </h2>
             <p class="text-gray-500 text-base md:text-lg mb-10 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing
+              <br />
+              elit. Morbi egestas Werat viverra id et aliquet.
+              <br />
               <br/>
               elit. Morbi egestas Werat viverra id et aliquet.
               <br/>
@@ -533,11 +539,32 @@
             </button>
           </div>
 
+          <div
+            class="w-full md:w-8/12 relative animate__fadeInRight animate__animated animate__delay-3s"
+          >
           <div class="w-full md:w-8/12 relative">
             <div
               class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-all duration-300 hover:shadow-orange-200"
             >
               <div class="aspect-video w-full h-full relative">
+                <iframe
+                  width="700"
+                  height="400"
+                  src="https://www.youtube.com/embed/g3-VxLQO7do?si=3azfD-8SeSvtf-IE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
                 <iframe 
                 width="700"
                 height="400" 
@@ -559,6 +586,97 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 mt-12 bg-gray-100">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+      >
+        <!-- Logo + text  -->
+        <div>
+          <img src="./img/logo.svg" alt="" />
+          <p class="text-gray-500 leading-relaxed mt-5 mb-8">
+            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
+            tellus, sed condimentum volutpat.
+          </p>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h2 class="font-bold">Socials</h2>
+          <p class="text-gray-500 leading-relaxed mt-5 mb-8">
+            themefisher@gmail.com
+          </p>
+
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-orange-500"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+
+            <div
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-orange-500"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-orange-500"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-orange-500"
+            >
+              <i class="fa-brands fa-skype"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h2 class="font-bold">Quick Links</h2>
+          <ul class="text-gray-500 leading-relaxed mt-5 mb-8 space-y-2">
+            <li>
+              <a class="hover:text-orange-500 hover:underline" href="">About</a>
+            </li>
+            <li>
+              <a class="hover:text-orange-500 hover:underline" href=""
+                >Category</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-orange-500 hover:underline" href=""
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-orange-500 hover:underline" href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location & Contact -->
+        <div>
+          <h2 class="font-bold">Location & Contact</h2>
+          <p class="text-gray-500 leading-relaxed mt-5 mb-8">
+            2118 Thornridge Cir. Syracuse, Connecticut 35624 <br />
+            (704) 555-0127
+          </p>
+        </div>
+      </div>
+
+      <!-- line + copyright -->
+      <div
+        class="max-w-7xl mx-auto px-6 border-t border-gray-300 text-center py-6 text-gray-500"
+      >
+        Designed And Developed by Themefisher
+      </div>
+    </footer>
 
     <!-- Nút bấm để chuyển trang lên  -->
     <a href="#" class="backtoTop cd-top text-replace js-cd-top">
