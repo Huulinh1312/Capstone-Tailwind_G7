@@ -1483,3 +1483,32 @@ body {
 .wow img {
     animation: none;
 }
+.slick-dots {
+  border: none !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px;
+  background: transparent !important;
+}
+.slick-dots li {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+.slick-dots li button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ededed;
+  border: none;
+  transition: background 0.3s;
+  box-shadow: none;
+}
+.slick-dots li.slick-active button {
+  background: #ff6a13;
+}
+.slick-dots li button:before {
+  display: none;
+}
